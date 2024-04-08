@@ -69,9 +69,9 @@ export const Home = () => {
     
             </div>
 
-             <About />
+             {/* <About />
             <Skills />
-            <Projects /> 
+            <Projects />  */}
             <Contact />
             
             </>
