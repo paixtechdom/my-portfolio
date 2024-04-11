@@ -108,7 +108,7 @@ export const Contact = () => {
 
 const FormInput = ({label, icon, value, setValue, type, isTextArea}) => {
     return(
-        <div className="flex w-full relative text-gray-100 text-sm">
+        <div className="flex w-full relative text-gray-100 text-sm z-0">
         <label htmlFor="" className="bg-black absolute left-3 -top-3 px-4">{label}</label>
 
         <div className="flex border border-gray-400 rounded-2xl shadow-lg center w-full overflow-hidden">

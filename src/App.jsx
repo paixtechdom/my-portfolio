@@ -7,10 +7,19 @@ export const AppContext = createContext()
 const Layout = () => {
   const [ currentNav, setCurrentNav ] = useState(0)
   const [ showNav, setShowNav ] = useState(false)
+  const [ scrolledDown, setScrolledDown ] = useState(false)
+
+    document.addEventListener('scroll', () => {
+      if(document.documentElement.scrollTop > 500){
+          setScrolledDown(true)
+      }else{
+          setScrolledDown(false)
+      }
+  })
 
 
     return (
-      <AppContext.Provider value={{currentNav, setCurrentNav, showNav, setShowNav }}>
+      <AppContext.Provider value={{currentNav, setCurrentNav, showNav, setShowNav, scrolledDown, setScrolledDown }}>
 
         <div className='app min-h-screen'>
 

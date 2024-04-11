@@ -2,14 +2,14 @@ import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 
-export const Button = ({text, className, type, icon, func, showIcon, setShowNav}) => {
+const Button = ({text, className, type, icon, func, showIcon, setShowNav}) => {
             const [ hovered, setHovered ] = useState(false)
             useEffect(() => {
                 setHovered(showIcon)
             }, [showIcon])
 
            return(
-            <div className={`cursor-pointer text-sm p-1 center transition-all duration-500 px-4 border border-gray-400 h-fit w-fit rounded-lg rounded-tr-[20px] ${className} flex gap-3 overflow-hidden`} 
+            <div className={`cursor-pointer text-sm p-1 center transition-all duration-500 px-4 border border-gray-400 h-fit rounded-lg rounded-tr-[20px] ${className} flex gap-3 overflow-hidden`} 
             onClick={() => {
                 func(text)
                 setShowNav(false)
@@ -30,3 +30,14 @@ export const Button = ({text, className, type, icon, func, showIcon, setShowNav}
             </div>
         )
 }
+
+
+const IconButton = ({icon, func}) => {
+    return(
+        <i className={`bi bi-${icon}  bg-black cursor-pointer text-xl p-1 transition-all duration-1000 center px-4 border border-gray-400 h-10 w-10 rounded rounded-tr-[15px] `} 
+        onClick={() => func()}
+        ></i>
+    )
+}
+
+export { Button, IconButton}

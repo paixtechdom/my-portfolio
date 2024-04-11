@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import './Bg.css'
 import me from '../assets/img/me.png'
+import { AppContext } from '../App'
 
 
 const StaticBg = () => {
     const [ cursorPos, setCursorPos ] = useState({x: 0, y: 0})
-
+    const { scrolledDown } = useContext(AppContext)
     
     document.addEventListener('mousemove', (e)=> {       
         setCursorPos({x: e.clientX , y: e.clientY})
@@ -14,9 +15,9 @@ const StaticBg = () => {
     return(
         <div className="fixed flex justify-end items-center h-screen bg-black w-full ">
 
-            <img src={me} alt="My Image" className='z-[3] absolute right-0'/>
+            <img src={me} alt="My Image" className='z-[3] absolute right-0 bottom-0'/>
 
-            <div className="fixed bg-black bg-opacity-90 h-screen w-full z-[4]"></div>
+            <div className={`fixed transition-all duration-1000 bg-black ${scrolledDown ? 'bg-opacity-95' : `bg-opacity-90`} h-screen w-full z-[4]`}></div>
 
             <div className="blurOverlay h-screen w-full z-[2]"></div>
             <div className="z-[1]">
@@ -38,7 +39,7 @@ const Obj = ({bg, start}) => {
     useEffect(() => {
         const interval = setInterval(() => {
             moveObj()    
-        }, 5000);
+        }, 4000);
 
         return(() => clearInterval(interval))
     }, [])
@@ -62,7 +63,7 @@ const Obj = ({bg, start}) => {
 
 
     return(
-        <div className={`absolute blurLight w-[350px] h-[350px] z-[10] rounded-full flex items-center bg-opacity-1 0 justify-center transition-all duration-[5s] ${bg}`}  style={{
+        <div className={`absolute blurLight w-[350px] h-[350px] z-[10] rounded-full flex items-center justify-center transition-all duration-[4s] ${bg}`}  style={{
             top: pos.y+'%',
             left: pos.x+'%',
         }}></div>

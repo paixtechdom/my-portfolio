@@ -18,11 +18,11 @@ export const Intro = ({display}) => {
 
             
     return(
-        <div>
+        <div className="">
                 {
                 IntroText.map((letter, key) => (
                     key < index ?
-                    <span key={key} className="text-5xl xl:text-8xl text-gray-100"> 
+                    <span key={key} className="text-6xl lg:text-7xl text-gray-300"> 
                         {letter}
                     </span> : ''
                 ))
