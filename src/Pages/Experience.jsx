@@ -1,9 +1,102 @@
-export const Experience = () => {
-    return(
-    <div id="Experience" className="parent">
-        <div className="text-3xl font-bold">Experience</div>
+import { Header } from "../assets/Components/Header"
 
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab mollitia ullam, ut modi nisi dolore saepe eaque laudantium voluptatum temporibus. Aspernatur odio harum tempore iste, at alias ducimus sit corrupti provident recusandae, aut id repellat incidunt reiciendis sunt accusantium saepe laudantium temporibus nihil numquam voluptatibus inventore eveniet fugit. Aspernatur quod dolorem sunt harum, animi voluptatem incidunt. Natus itaque tempora blanditiis nesciunt placeat! Officiis vel alias repellat, animi incidunt beatae rerum nesciunt voluptatum dolor aperiam repellendus, excepturi consequuntur eveniet nisi iure itaque mollitia corrupti nam, eos sequi placeat ducimus reprehenderit. Architecto itaque illum ratione autem sit nihil, provident veniam fugit soluta eum nam ut distinctio debitis tempore asperiores perspiciatis libero excepturi necessitatibus dolor minima quo labore laboriosam tenetur suscipit? Odio vel corrupti, totam pariatur culpa, iste accusamus qui ipsa sunt vitae porro quaerat veritatis eveniet reprehenderit, ab non deserunt enim voluptatum id eaque cum quibusdam! Eligendi nostrum perferendis sunt officia, vero optio! Odio a, labore ea nesciunt quae minus molestias, blanditiis, voluptatum modi perspiciatis ducimus earum ipsum eius delectus! Inventore, culpa consectetur itaque animi eius deleniti deserunt voluptatibus architecto quasi error molestias accusamus. Saepe, sint illo! Exercitationem incidunt, assumenda quisquam nam est possimus molestiae reiciendis rerum fugiat. Aspernatur nemo quidem exercitationem autem laborum voluptates fugit? Cupiditate, tempore voluptatem voluptatibus voluptas, itaque accusamus dolorem rem consequatur suscipit veritatis quisquam, unde magni? Obcaecati assumenda commodi enim alias ipsum nulla fuga necessitatibus placeat nemo animi minima, blanditiis dignissimos. Est, alias? Maiores excepturi numquam deleniti maxime veniam qui, quo beatae libero ipsum blanditiis aliquam. Fugiat quod ducimus rem velit! Soluta corporis voluptatem, nulla perspiciatis omnis voluptas, odio, deserunt aperiam quibusdam recusandae aspernatur vero. Omnis dolorem sequi, explicabo eligendi nulla quisquam iusto nisi deleniti voluptate enim, accusamus itaque debitis harum qui? Temporibus enim dolore sint ullam illo voluptatibus placeat sit totam. Laudantium quaerat cupiditate nisi aspernatur distinctio est! Nulla, eius voluptatum provident explicabo similique officiis quia dicta! Consectetur explicabo velit dolor asperiores harum, placeat consequuntur est in sed quidem iste ea a nihil dolorem! Facilis obcaecati excepturi necessitatibus repudiandae porro quae reprehenderit animi beatae maiores consequuntur. Consectetur sequi culpa sapiente beatae aut, quidem earum eveniet reiciendis voluptatum, doloremque, inventore dolor dolorum asperiores eos blanditiis pariatur quos dolore tempora optio neque! Quis, doloremque. Molestiae laudantium quod aliquam atque voluptate veniam dignissimos perferendis! Molestias, unde natus. Delectus esse repellat velit voluptatum totam nam molestiae repellendus voluptatibus reiciendis cumque ipsum, quisquam alias minus necessitatibus rerum beatae accusamus, unde, consequuntur sequi! Ex maxime ducimus consequuntur laborum officiis minima. Suscipit quam hic ad et quidem pariatur perferendis rem magni sint. Animi dolorem adipisci ut. Accusantium delectus asperiores consequuntur quas inventore corrupti, fugit excepturi dignissimos voluptates rerum, cupiditate veritatis saepe ipsa autem deleniti optio ea maiores. Hic quo nihil saepe dignissimos laborum? Tempore non nostrum qui amet modi unde, obcaecati architecto excepturi illo repellendus ratione aspernatur saepe doloremque voluptates harum? Delectus corporis adipisci quasi sint laborum ea accusantium dolorem esse minus tenetur harum qui error aperiam nihil, dolores deleniti neque veniam! Necessitatibus, eligendi consequatur. Incidunt aspernatur corporis iste eos velit officiis ea nostrum dolorem culpa eius. Qui eligendi perferendis sunt eius! Illum nihil cum labore, quod ullam modi ab excepturi saepe esse laborum voluptas, eos molestiae blanditiis. Velit, ab officia suscipit eveniet quis quaerat perspiciatis illum id nemo provident totam assumenda nobis, reprehenderit praesentium culpa cum quibusdam? Exercitationem neque consectetur repudiandae eos, reiciendis incidunt nostrum corporis molestiae! Odit maxime soluta adipisci cum perspiciatis dolor, dignissimos molestias vel amet cumque! Itaque sint, minus nostrum magnam, eligendi explicabo vel omnis illo maiores commodi rem necessitatibus delectus, aut harum iste? Error laudantium sapiente debitis veritatis inventore velit. At quas error quisquam placeat ducimus repellendus excepturi corrupti velit a! Eligendi praesentium nam sapiente cum, quidem distinctio magnam quaerat mollitia labore nulla quo fuga non at similique error beatae cupiditate vero libero voluptas dolorum voluptatibus. Aspernatur, perspiciatis? Nihil autem, molestias eum a minima sapiente odit perspiciatis repudiandae rerum eligendi, consectetur sed vero ipsam adipisci aut. Doloribus sunt assumenda omnis recusandae doloremque expedita vitae laudantium consectetur, ea magni. Dolore eum natus dolores, dignissimos reiciendis expedita maiores aperiam atque exercitationem debitis officiis vero impedit quisquam ut voluptate voluptatibus itaque nemo sequi sit eveniet quam, odit, culpa deleniti aut? Fugiat soluta facere, voluptates impedit nobis perspiciatis explicabo accusamus culpa, minima, inventore animi iste laboriosam dignissimos asperiores veritatis alias. Accusantium, ipsa maxime fugit quasi, magnam aut laborum aliquid vitae, numquam harum cumque dolore laudantium quas saepe? Enim ex, sequi expedita magni nihil excepturi quibusdam possimus atque at modi ut distinctio exercitationem obcaecati repellendus! Deleniti corporis facere saepe praesentium iusto molestiae deserunt quisquam eveniet libero. Neque voluptatem dolores ipsum eligendi libero soluta doloremque quae ab voluptas voluptatibus excepturi incidunt ea, cupiditate vero quidem deserunt pariatur. Exercitationem quisquam voluptate delectus magni sapiente tenetur libero ipsum, velit corporis blanditiis dignissimos, fuga enim, voluptas consequatur. Tenetur ut unde ullam laborum a laudantium, veniam exercitationem quos praesentium enim numquam, deserunt voluptates eaque excepturi accusantium. Error hic eum excepturi magni beatae voluptatem ratione cum iste, consequuntur porro dolore debitis molestias officia asperiores explicabo repellat magnam quas est nesciunt, laboriosam eaque modi nam impedit. Repudiandae fugiat eos facere modi qui corrupti enim rem, numquam eaque officiis minima a expedita voluptatibus nobis dolorem sint mollitia. Hic architecto vitae reiciendis exercitationem, voluptatibus corrupti ratione autem. Commodi alias fugit non beatae, consequuntur aspernatur quod laborum excepturi similique! Modi enim voluptatem numquam voluptas culpa possimus illo, magni cum blanditiis fugit dolore eius maxime veritatis totam nesciunt molestiae optio neque minus? Nulla ab recusandae voluptas dicta exercitationem numquam ipsa soluta obcaecati dolore quos? Suscipit aliquam quas neque facere doloremque dolorem temporibus sequi aperiam eligendi, quibusdam numquam ducimus animi voluptatum placeat? In error eaque ratione incidunt sint magnam ipsum iusto aut quod iure natus, similique, sunt fuga eius rerum? Inventore soluta omnis odit ratione quam dolores unde reiciendis iure eaque officiis placeat, quod in sint veritatis ipsam possimus magni. Quos, cum voluptate, voluptates nemo sint consectetur totam unde illum illo molestiae esse dolores ipsum aliquam dicta ipsam cumque aspernatur laudantium eveniet sed ex quaerat ut. Culpa corporis dignissimos quia obcaecati hic distinctio illo molestias.
+export const Experience = () => {
+    const myexperience = [
+        {
+            role: 'Software Engineer (Part Time)',
+            organization: 'Kenrow Digital Marketing',
+            date: 'April 2, 2024',
+            intro: [],
+            responsibility: [
+                "I've been involved in building software applications, with a focus on building the Kenrow Shop's merchant management application as a start.",
+                "I've had the pleasure of contributing to the brainstorming and execution of fresh, innovative features that are custom-made for the merchant management application",
+                "Whenever a glitch rears its head, I've been there to roll up my sleeves, dive in, and iron out the wrinkles, ensuring smooth sailing for our software",
+                "Working hand-in-hand with diverse teams, ensuring we consistently deliver top-notch software solutions"
+            ],
+            conclusion: ''
+        },
+        {
+            role: 'Freelance Web Developer',
+            organization: 'Saculiet Nigeria Enterprises',
+            date: 'Jan 3, 2024',
+            intro: [
+                "I had the opportunity to develop a portal specifically tailored for the Driving School Arm of our company. This portal enables organizations to easily verify the certificates of the students from our driving school",
+                "Some key features I implemented include:"
+            ],
+
+            responsibility: [
+                'A user-friendly page allowing organizations to submit student verification requests with email verification for added security',
+                'A comprehensive dashboard for the driving school administration to efficiently manage requests, students, and organizations',
+                "Automated email notifications to keep the school informed at every step: from receiving a request submission to granting it, and notifying students when their certificate is verified by an organization."
+            ],
+            conclusion: 'Additionally, I took charge of designing a captivating landing page and a visually appealing gallery page showcasing images and pictures of our driving school, enhancing our online presence and engaging potential students.'
+        },
+
+        {
+            role: 'Freelance Web Developer',
+            organization: 'Christ Liberty Assembly',
+            date: 'Dec 12, 2023',
+            intro: [
+                "I had the privilege of building a website for Christ Liberty Assembly, a beloved church, which features key sections including:"
+            ],
+            responsibility: [
+                'A dedicated page for sharing inspiring sermons, allowing the congregation to access spiritual nourishment anytime, anywhere.',
+                'A visually captivating gallery page showcasing images that capture the essence and beauty of the church.',
+                'An engaging platform for sharing insightful articles, with individual pages for each article. These articles are easily shareable on social media platforms like Facebook and WhatsApp, or by copying the link to the clipboard.',
+
+                "To enhance accessibility, I implemented a user-friendly search functionality. This feature enables visitors to filter articles by title and sermons by title or preacher, ensuring that they can quickly find the content they're seeking."
+            ]
+        },
+    ]
+
+    return(
+    <div id="Experience" className="parent center flex-col">
+        <Header text={'Relevant Experience'} icon={'people-fill'}/>
+        
+        <div className="w-11/12 md:w-10/12 lg:w-9/12 center flex-col gap-6 ">
+            {
+                myexperience.map((experience, i) => (
+                    <div key={i} className={`flex flex-col
+                    w-full text-gray-300 bg-black bg-opacity-50 mb-9 mt-3 rounded-xl ${i == 0 ? 'col-span-2' : ''} tracking-wide leading-relaxed `}>
+                        
+                        <div className="flex flex-col gap-3 bg-gray-900 p-4 lg:p-5 lg:px-9 rounded-t-xl">
+                            <p className="text-xl font-bold text-gray-300">
+                                {experience.role}
+                            </p>
+                            <div className="flex justify-between">
+                                <p className="">{experience.organization}</p>
+                                <p className="text-sm text-gray-400">{experience.date}</p>
+
+                            </div>
+
+                        </div>
+                        <div className="flex flex-col p-4 lg:p-9 text-[15px] lg:text-[16px] border pt-6 border-t-0 border-gray-600 rounded-b-xl">
+                            {
+                                experience.intro.map((int, i) => (
+                                    <p key={i} className="mb-4">{int}</p>
+                                ))
+                            }
+                            {
+                                experience.responsibility.map((resp, j) => (
+                                    <div key={j} className={`flex gap-3 w-full min-h-5 overflow-hidden`}>
+                                        <div className="flex flex-col items-center">
+                                            <p className="h-3 w-3 rounded-full bg-blue-500"></p>
+                                            <p className="w-1 h-4/5 border border-gray-600 bg-black bg-opacity-70 border-t-0"></p>
+        
+                                        </div>
+                                        <p className={`w-full ${j == experience.responsibility.length - 1 ? 'pb-2' : 'pb-5'}`}>{resp}</p>
+                                        
+                                    </div>
+                                ))
+                            }
+                            <p className="mt-4">{experience.conclusion}</p>
+                        </div>
+                    </div>
+                ))
+            }
+
+        </div>
+        
     </div>
     )
 }

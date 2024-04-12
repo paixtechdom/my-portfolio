@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const Intro = ({display}) => {
-    const text = 'Welcome to my Portfolio website'
+    const text = 'A web developer'
     const IntroText = text.split("")
 
     const [ index, setIndex ] = useState(0)
@@ -22,7 +22,7 @@ export const Intro = ({display}) => {
                 {
                 IntroText.map((letter, key) => (
                     key < index ?
-                    <span key={key} className="text-6xl lg:text-7xl text-gray-300"> 
+                    <span key={key} className="text-5xl lg:text-7xl text-gray-300"> 
                         {letter}
                     </span> : ''
                 ))

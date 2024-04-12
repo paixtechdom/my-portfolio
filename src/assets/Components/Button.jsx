@@ -9,7 +9,7 @@ const Button = ({text, className, type, icon, func, showIcon, setShowNav}) => {
             }, [showIcon])
 
            return(
-            <div className={`cursor-pointer text-sm p-1 center transition-all duration-500 px-4 border border-gray-400 h-fit rounded-lg rounded-tr-[20px] ${className} flex gap-3 overflow-hidden`} 
+            <div className={`cursor-pointer text-sm p-1 center transition-all duration-500 px-4 border border-gray-400 h-fit rounded-xl rounded-tr-[20px] ${className} flex gap-3 overflow-hidden`} 
             onClick={() => {
                 func(text)
                 setShowNav(false)
@@ -32,9 +32,9 @@ const Button = ({text, className, type, icon, func, showIcon, setShowNav}) => {
 }
 
 
-const IconButton = ({icon, func}) => {
+const IconButton = ({icon, func, className}) => {
     return(
-        <i className={`bi bi-${icon}  bg-black cursor-pointer text-xl p-1 transition-all duration-1000 center px-4 border border-gray-400 h-10 w-10 rounded rounded-tr-[15px] `} 
+        <i className={`bi bi-${icon} ${className} bg-gray-900 cursor-pointer text-xl transition-all duration-1000 center p-6 border border-gray-400 h-10 w-10 rounded rounded-tl-[15px] text-gray-200`} 
         onClick={() => func()}
         ></i>
     )

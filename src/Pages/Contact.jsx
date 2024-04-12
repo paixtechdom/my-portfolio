@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Header } from "../assets/Components/Header"
+import me  from '../assets/img/me.png'
 
 export const Contact = () => {
     const [ name, setName ] = useState('')
@@ -48,27 +49,28 @@ export const Contact = () => {
 
         <div className="flex flex-col center lg:flex-row w-11/12 md:w-10/12 lg:w-9/12 mt-5 gap-9">
 
-            <div className="w-full bg-gray-900 rounded-xl h-96 center">
-                <div className="flex flex-col w-9/12 flex-col h-4/5 text-gray-200 justify-center gap-8">
-                   <p className="text-xl font-bold text-gray-500">What are you waiting for?</p>
-
-                    <div className="flex w-full text-4xl justify- gap-4 bg-blue- items-center" onClick={() => {
+            <div className="w-full bg-gray-900 rounded-xl h-96 center border border-gray-700 ">
+                    <div className="flex flex-col w-full text-4xl justify- gap-4 bg-blue- items- center " onClick={() => {
                         document.querySelector('#contactform').scrollIntoView({
                             behavior: 'smooth'
                         })
                     }}>
-                        <i className="bi bi-person-plus-fill center bg-gray-100 text-gray-900 h-14 w-14 border rounded-full"></i>
+                        <div className="h-40 w-40 center rounded-full bg-gray-200 overflow-hidden">
+                            <img src={me} alt="My Image" className="w-fit h-full"/>
 
-                        <p className=" flex items-center gap-4 lining-nums"> 
-                        Onboard me 
-                        </p>
-                        <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
-                        <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
+                        </div>
+                        {/* <i className="bi bi-person-plus-fill center bg-gray-100 text-gray-900 h-20 w-20 border rounded-full"></i> */}
+
+                        <div className="flex items-center cursor-pointer">
+                            <p className=" flex items-center gap-4 lining-nums"> 
+                            Onboard me 
+                            </p>
+                            <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
+                            <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
+                        </div>
 
                     </div>
-
-
-                </div>
+              
             </div>
             <form action="" id="contactform" className="center w-11/12 flex-col gap-5">
                 <div className="flex w-full justify-between px-9 mb-6 border rounded-full p-2 border-gray-400">
@@ -85,11 +87,15 @@ export const Contact = () => {
                 <FormInput label={'Email'} icon={'envelope-fill'} value={email} setValue={setEmail} type={'email'}/>
 
                 <div className="flex w-full relative text-gray-100">
-                    <label htmlFor="" className="bg-black absolute text-sm left-3 -top-3 px-4">Message</label>
+                    <label htmlFor="" className="bg-black absolute text-sm left-3 -top-3 px-4 flex items-center gap-3">
+                    <i className={`bi bi-chat-dots-fill `}></i> 
+                    
+                    Message
+                    </label>
 
                     <div className="flex border border-gray-400 rounded-2xl shadow-lg center w-full overflow-hidden text-sm">
-                        <textarea type='text' placeholder="" className="bg-black bg-opacity-70 w-11/12 p-3 pt-5 px-6 outline-none " value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                        <i className={`bi bi-chat-dots-fill text-gray-100 w-1/12 center h-full bg-gray-900`}></i> 
+                        <textarea type='text' placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none " value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                        
                     </div>                
                 </div>
 
@@ -109,14 +115,17 @@ export const Contact = () => {
 const FormInput = ({label, icon, value, setValue, type, isTextArea}) => {
     return(
         <div className="flex w-full relative text-gray-100 text-sm z-0">
-        <label htmlFor="" className="bg-black absolute left-3 -top-3 px-4">{label}</label>
+        <label htmlFor="" className="bg-black absolute left-3 -top-3 px-4 flex items-center gap-3">
+        {
+            icon !== '' ? 
+            <i className={`bi bi-${icon}`}></i> : ''
+        } 
+        {label} 
+            </label>
 
         <div className="flex border border-gray-400 rounded-2xl shadow-lg center w-full overflow-hidden">
-            <input type={type} placeholder="" className="bg-black bg-opacity-70 w-11/12 p-3 pt-5 px-6 outline-none " value={value} onChange={(e) => setValue(e.target.value)}/>
-            {
-                icon !== '' ? 
-                <i className={`bi bi-${icon} text-gray-100 w-1/12 center h-full bg-gray-900`}></i> : ''
-            }
+            <input type={type} placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none " value={value} onChange={(e) => setValue(e.target.value)}/>
+            
 
         </div>
     </div>

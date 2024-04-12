@@ -14,10 +14,10 @@ const StaticBg = () => {
 
     return(
         <div className="fixed flex justify-end items-center h-screen bg-black w-full ">
+                <img src={me} alt="My Image" className='z-[3] absolute right-0 bottom-0'/>
 
-            <img src={me} alt="My Image" className='z-[3] absolute right-0 bottom-0'/>
 
-            <div className={`fixed transition-all duration-1000 bg-black ${scrolledDown ? 'bg-opacity-95' : `bg-opacity-90`} h-screen w-full z-[4]`}></div>
+            <div className={`fixed transition-all duration-1000 bg-black ${scrolledDown ? 'lg:bg-opacity-95 bg-opacity-90' : `bg-opacity-85 lg:bg-opacity-90`} h-screen w-full z-[4]`}></div>
 
             <div className="blurOverlay h-screen w-full z-[2]"></div>
             <div className="z-[1]">
