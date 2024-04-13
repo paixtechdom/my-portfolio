@@ -8,12 +8,12 @@ import Eduaid from "./img/eduaid.jpeg"
 import Gpa from "./img/gpa.png"
 import Tic from "./img/tic.png"
 import Booklist from "./img/booklist.png"
-
+import Portfolio from './img/portfolioImg.png'
 import Rock from "./img/rock.png"
 import Clock from "./img/clock.png"
 import Calculator from "./img/calculator.png"
 
-const Projects = [
+const MyProjects = [
     {
         title: 'Landing Page - Saculiet NIG Enterprises',
         lang: ['REACT', 'Tailwind', 'PHP', 'SQL', 'SEO'],
@@ -50,6 +50,13 @@ const Projects = [
         img: BlogImg
     },
     {
+        title: 'Portfolio Website',
+        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
+        link: 'https://johnoluwaferanmi.netlify.app',
+        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
+        img: Portfolio
+    },
+    {
         title: 'Website for Macmay Group',
         lang: ['REACT', 'BOOTSTRAP', 'CSS'],
         link: 'https://macmaygroup.netlify.app',
@@ -71,11 +78,11 @@ const Projects = [
         img: Gpa
     },
     {
-        title: 'Tic Tac',
+        title: 'Scientific Calculator',
         lang: ['HTML', 'CSS', 'JAVASCRIPT'],
-        link: 'https://paixtechdom-tictac.netlify.app',
-        description:  ['A classic two-player game played on a 3x3 grid',"Each player take turns clicking on an empty square, the first player is represented by 'X' and the second 'O' ", 'The goal is to form a row, column or or diagonal with three of their symbols, while preventing the opponent from doing same.', 'The first player to achieve that wins and if the grid is filled without a winner, the game is draw'],
-        img: Tic
+        link: 'https://paixtechdom-calculator.netlify.app',
+        description:  ['This is an advanced calculator with scientific functions, designed to handle complex mathematical operations, including tigonometric and logarithimic calculations'],
+        img: Calculator
     },
     {
         title: 'Booklist App',
@@ -86,14 +93,6 @@ const Projects = [
         img: Booklist
     },
     {
-        title: 'Rock Paper Scissors',           
-        link: 'https://paixtechdom-rock.netlify.app',
-        lang: ['HTML', 'CSS', 'JAVASCRIPT'],
-        img: 'projectRock2.png',
-        description:  ['A simple javascript game that lets you play the age-old hand game against the computer', 'Will you choose rock, paper or scissors to outsmart your opponent?'],
-        img: Rock
-    },
-    {
         title: 'Stopwatch',
         link: 'https://paixtechdom-stopwatch.netlify.app',
         lang: ['HTML', 'CSS', 'JAVASCRIPT'],
@@ -102,14 +101,22 @@ const Projects = [
         
     },
     {
-        title: 'Scientific Calculator',
+        title: 'Rock Paper Scissors',           
+        link: 'https://paixtechdom-rock.netlify.app',
         lang: ['HTML', 'CSS', 'JAVASCRIPT'],
-        link: 'https://paixtechdom-calculator.netlify.app',
-        description:  ['This is an advanced calculator with scientific functions, designed to handle complex mathematical operations, including tigonometric and logarithimic calculations'],
-        img: Calculator
+        img: 'projectRock2.png',
+        description:  ['A simple javascript game that lets you play the age-old hand game against the computer', 'Will you choose rock, paper or scissors to outsmart your opponent?'],
+        img: Rock
+    },
+    {
+        title: 'Tic Tac',
+        lang: ['HTML', 'CSS', 'JAVASCRIPT'],
+        link: 'https://paixtechdom-tictac.netlify.app',
+        description:  ['A classic two-player game played on a 3x3 grid',"Each player take turns clicking on an empty square, the first player is represented by 'X' and the second 'O' ", 'The goal is to form a row, column or or diagonal with three of their symbols, while preventing the opponent from doing same.', 'The first player to achieve that wins and if the grid is filled without a winner, the game is draw'],
+        img: Tic
     },
 ]
 
 
 
-export { Projects }
+export { MyProjects }

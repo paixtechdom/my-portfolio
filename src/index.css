@@ -23,9 +23,31 @@
     letter-spacing: 1.5px;
 }
 
+.animateHeroImg{
+    transition: all 0.3s ease-in-out;
+    animation: animateHeroImg 3s ease-in-out infinite;
+    scale: 0.9
+}
+.animateParallax{
+    animation: animateParallax 1s ease-in-out;
+}
+
 
 .animate-bounce-x{
     animation: animate-bounce-x 2s ease-in-out infinite;
+}
+
+@keyframes animateParallax {
+    from{
+        top: 100px;
+        opacity: 0.5;
+        scale: 0.5;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 @keyframes animate-bounce-x{

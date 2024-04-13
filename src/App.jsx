@@ -25,7 +25,7 @@ const Layout = () => {
 
           <StaticBg />
 
-        <div className="z-[4] relative text-gray-400">
+        <div className="z-[4] relative text-gray-400 overflow-hidden">
           <Outlet />
         </div>
       

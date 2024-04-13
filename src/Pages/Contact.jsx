@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Header } from "../assets/Components/Header"
+import { Parallax } from "../assets/Components/Parallax"
 import me  from '../assets/img/me.png'
 
 export const Contact = () => {
@@ -55,19 +56,23 @@ export const Contact = () => {
                             behavior: 'smooth'
                         })
                     }}>
-                        <div className="h-40 w-40 center rounded-full bg-gray-200 overflow-hidden">
-                            <img src={me} alt="My Image" className="w-fit h-full"/>
+                        <Parallax id={'myimage'}>
+                            <div className="h-40 w-40 center rounded-full bg-gray-200 overflow-hidden">
+                                <img src={me} alt="My Image" className="w-fit h-full"/>
 
-                        </div>
+                            </div>
+
+                        </Parallax>
                         {/* <i className="bi bi-person-plus-fill center bg-gray-100 text-gray-900 h-20 w-20 border rounded-full"></i> */}
-
-                        <div className="flex items-center cursor-pointer">
-                            <p className=" flex items-center gap-4 lining-nums"> 
-                            Onboard me 
-                            </p>
-                            <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
-                            <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
-                        </div>
+                        <Parallax id={'onboard'}>
+                            <div className="flex items-center cursor-pointer">
+                                <p className=" flex items-center gap-4 lining-nums"> 
+                                Onboard me 
+                                </p>
+                                <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
+                                <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
+                            </div>
+                        </Parallax>
 
                     </div>
               
@@ -76,17 +81,25 @@ export const Contact = () => {
                 <div className="flex w-full justify-between px-9 mb-6 border rounded-full p-2 border-gray-400">
                 {
                     contactInfo.map((contact) => (
+                        <Parallax id={contact.icon.replaceAll('-','')}>
+
                         <a href={contact.link} className="items-center bg-b lack w-11 h-11 center text-gray-100 border border-gray-700 rounded-full text-xl hover:scale-125 transition-all duration-500 hover:bg-gray-900  hover:border-0">
                             <i className={`bi bi-${contact.icon}`}></i>
                         </a>
+                        </Parallax>
                     ))
                 }
                 </div>
-                <FormInput label={'Name'} icon={'person-fill'} value={name} setValue={setName} type={'text'}/>
+                <Parallax id={'formname'} className={'w-full'}>
+                    <FormInput label={'Name'} icon={'person-fill'} value={name} setValue={setName} type={'text'}/>
+                </Parallax>
+                <Parallax id={'formemail'} className={'w-full'}>
+                    <FormInput label={'Email'} icon={'envelope-fill'} value={email} setValue={setEmail} type={'email'}/>
+                </Parallax>
 
-                <FormInput label={'Email'} icon={'envelope-fill'} value={email} setValue={setEmail} type={'email'}/>
 
-                <div className="flex w-full relative text-gray-100">
+                <Parallax id={'formmessage'} className={'w-full'}>
+                    <div className="flex w-full relative text-gray-100">
                     <label htmlFor="" className="bg-black absolute text-sm left-3 -top-3 px-4 flex items-center gap-3">
                     <i className={`bi bi-chat-dots-fill `}></i> 
                     
@@ -97,13 +110,16 @@ export const Contact = () => {
                         <textarea type='text' placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none " value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                         
                     </div>                
-                </div>
+                    </div>
+                </Parallax>
 
-                <div className={`bg-gray-900 text-gray-100 rounded-2xl w-full  transition-all duration-1000 gap-3 text-xl p-3 center cursor-pointer hover:scale-90`}>
-                    Send Message
+                <Parallax id={'formmessage'} className={'w-full'}>
+                    <div className={`bg-gray-900 text-gray-100 rounded-2xl w-full  transition-all duration-1000 gap-3 text-xl p-3 center cursor-pointer hover:scale-90`}>
+                        Send Message
 
-                    <i className="bi bi-cursor-fill"></i>
-                </div>
+                        <i className="bi bi-cursor-fill"></i>
+                    </div>
+                </Parallax>
             </form>
         </div>
     </div>

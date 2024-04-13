@@ -8,6 +8,7 @@ import { Contact } from "../Contact"
 import { AppContext } from "../../App"
 import { Navbar } from "../../assets/Components/Navbar"
 import { Experience } from "../Experience"
+import { Parallax } from "../../assets/Components/Parallax"
 
 
 
@@ -45,22 +46,22 @@ export const Home = () => {
             <>
             <div className={`parent w-full h-screen fixed bg-black transition-all duration-[3s] ${display ? 'bg-opacity-0' : 'bg-opacity-1'} ${hideFadeIn ? 'hidden' : 'block'}`} ></div>
 
-                <div id="Home" className="flex items-center lg:justify-center pt-9 flex-col w-full h-screen text-white">
-        
-                    <div className="flex justify-start flex-col w-11/12 md:w-10/12 lg:w-9/12 pt-[20vh] lg:pt-0">
-                        <div className="flex flex-col items-center lg:items-start w-full gap-2">
-                            <div className="flex gap-1 text-gray-300 text-right">
-                                <p>Hi There!</p> 👋👋
-                            </div>
-                            <p className="text-blue-400 text-2xl md:text-4xl font-bold">I am Oluwaferanmi John</p>
-                            <Intro display={display}/>
+                    <div id="Home" className="flex items-center lg:justify-center pt-9 flex-col w-full h-screen text-white">
+            
+                        <div className="flex justify-start flex-col w-11/12 md:w-10/12 lg:w-9/12 pt-[20vh] lg:pt-0">
+                            <div className="flex flex-col items-center lg:items-start w-full gap-2">
+                                <div className="flex gap-1 text-gray-300 text-right">
+                                    <p>Hi There!</p> 👋👋
+                                </div>
+                                <p className="text-blue-400 text-2xl md:text-4xl font-bold">I am Oluwaferanmi John</p>
+                                <Intro display={display}/>
 
-                            <Navbar scrolledDown={scrolledDown}/>
-                            
+                                <Navbar scrolledDown={scrolledDown}/>
+                                
+                            </div>
                         </div>
+            
                     </div>
-        
-                </div>
 
              <About />
             <Skills />
