@@ -68,7 +68,7 @@ export const Home = () => {
             <Experience />
             <Projects /> 
             <Contact />
-            <IconButton icon={'arrow-up'} className={`fixed bottom-5  transition-all duration-1000 ${scrolledDown ? 'right-5' : '-right-[50%]'}`} func={() => {
+            <IconButton icon={'arrow-up'} className={`fixed bottom-5 z-50  transition-all duration-1000 ${scrolledDown ? 'right-5' : '-right-[50%]'}`} func={() => {
                 document.querySelector('#Home').scrollIntoView({
                     behavior: 'smooth'
                 })
