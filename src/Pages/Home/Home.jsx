@@ -13,7 +13,7 @@ import { Parallax } from "../../assets/Components/Parallax"
 
 
 
-export const Home = () => {
+const Home = () => {
     const { currentNav, setCurrentNav, scrolledDown, setScrolledDown } = useContext(AppContext)
 
     const [ display, setDisplay ] = useState(false)
@@ -53,7 +53,7 @@ export const Home = () => {
                                 <div className="flex gap-1 text-gray-300 text-right">
                                     <p>Hi There!</p> 👋👋
                                 </div>
-                                <p className="text-blue-400 text-2xl md:text-4xl font-bold">I am Oluwaferanmi John</p>
+                                <p className="text-purple-600 text-2xl md:text-4xl font-bold">I am Oluwaferanmi John</p>
                                 <Intro display={display}/>
 
                                 <Navbar scrolledDown={scrolledDown}/>
@@ -80,4 +80,4 @@ export const Home = () => {
 }
 
 
-
+export default Home

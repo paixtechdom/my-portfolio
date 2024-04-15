@@ -16,7 +16,7 @@ export const Navbar = ({scrolledDown}) => {
         setShowNav(!showNav)
     }
     return(
-        <nav className={`h-screen md:h-fit py-5 transition-all w-full duration-1000 text-gray-300 ${scrolledDown ? 'center flex-col md:flex-row bg-black md:bg-opacity-80 fixed gap-5' : 'w-11/12 lg:w-7/12 text-center lg:text-left'} top-0 ${showNav ? ' right-[0%] ' : '-right-[100%] md:right-0'}  z-50 `}>
+        <nav className={`h-screen md:h-fit py-5 transition-all w-full duration-1000 text-gray-300 ${scrolledDown ? 'center flex-col md:flex-row bg-black md:bg-opacity-80 fixed gap-5 z-50' : 'w-11/12 lg:w-7/12 text-center lg:text-left -z-10'} top-0 ${showNav ? ' right-[0%] ' : '-right-[100%] md:right-0'}`}>
 
             <div className={`block fixed top-5 md:hidden ${scrolledDown ? 'right-5 md:-right[50%]' : 'pt-0 -right-[50%]'}`}>
                 <IconButton icon={showNav ? 'x-lg' : 'list'} 
@@ -62,7 +62,7 @@ const Nav = ({scrolledDown, icon, title, className, i}) => {
 
     if(!scrolledDown){
         return(
-            <span className={`${className} ml-1 gap-3 cursor-pointer text-blue-400 ${scrolledDown ? '' : 'underline '}`}
+            <span className={`${className} ml-1 gap-3 cursor-pointer text-purple-600 ${scrolledDown ? '' : 'underline '}`}
            onClick={() => scrollInto(title)}>
                 
                 {title.toLowerCase()}<span><i className={`bi bi-${icon} text-lg ${scrolledDown ? 'block w-8 h-8 center text-gray-100 rounded-full' : 'hidden'}`}></i></span></span> 
@@ -70,7 +70,7 @@ const Nav = ({scrolledDown, icon, title, className, i}) => {
 
     }else{
         return(
-            <Button showIcon={currentNav == i ? true : false} className={`bg-black p-3 md:p-2 px-3 lg:p-2 w-10/12 md:w-fit justify-start ${currentNav == i ? 'border-gray-200' : 'border-gray-700'}`} text={title} icon={icon} func={scrollInto} setShowNav={setShowNav}/>
+            <Button showIcon={currentNav == i ? true : false} className={`bg-black p-3 md:p-2 px-3 lg:p-2 w-10/12 md:w-fit justify-start ${currentNav == i ? 'border-purple-900' : 'border-gray-700'}`} text={title} icon={icon} func={scrollInto} setShowNav={setShowNav}/>
         )
     }
 }

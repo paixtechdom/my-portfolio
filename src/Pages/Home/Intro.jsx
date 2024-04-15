@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const Intro = ({display}) => {
-    const text = 'A web developer'
+    const text ="I'm a web developer"
     const IntroText = text.split("")
 
     const [ index, setIndex ] = useState(0)

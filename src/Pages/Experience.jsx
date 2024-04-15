@@ -11,7 +11,7 @@ export const Experience = () => {
             responsibility: [
                 "I've been involved in building software applications, with a focus on building the Kenrow Shop's merchant management application as a start.",
                 "I've had the pleasure of contributing to the brainstorming and execution of fresh, innovative features that are custom-made for the merchant management application",
-                "Whenever a glitch rears its head, I've been there to roll up my sleeves, dive in, and iron out the wrinkles, ensuring smooth sailing for our software",
+                "I troubleshoot and resolve technical issues on software applications",
                 "Working hand-in-hand with diverse teams, ensuring we consistently deliver top-notch software solutions"
             ],
             conclusion: ''
@@ -30,7 +30,7 @@ export const Experience = () => {
                 'A comprehensive dashboard for the driving school administration to efficiently manage requests, students, and organizations',
                 "Automated email notifications to keep the school informed at every step: from receiving a request submission to granting it, and notifying students when their certificate is verified by an organization."
             ],
-            conclusion: 'Additionally, I took charge of designing a captivating landing page and a visually appealing gallery page showcasing images and pictures of our driving school, enhancing our online presence and engaging potential students.'
+            conclusion: 'Additionally, I took charge of designing a captivating landing page and a visually appealing gallery page images and pictures of our driving school, enhancing our online presence and engaging potential students.'
         },
 
         {
@@ -71,7 +71,7 @@ export const Experience = () => {
                             </div>
 
                         </div>
-                        <div className="flex flex-col p-4 lg:p-9 text-[15px] lg:text-[16px] border pt-6 border-t-0 border-gray-600 rounded-b-xl">
+                        <div className="flex flex-col p-4 lg:p-9 text-[15px] lg:text-[16px] border pt-6 border-t-0 border-purple-900 rounded-b-xl">
                                 {
                                     experience.intro.map((int, j) => (
                                         int !== 's' &&
@@ -90,7 +90,7 @@ export const Experience = () => {
                                         <div key={j} className={`flex gap-3 w-full min-h-5 overflow-hidden`}>
                                             <div className="flex flex-col items-center">
                                                 <p className="h-3 w-3 rounded-full bg-purple-600"></p>
-                                                <p className="w-1 h-4/5 border border-gray-600 bg-black bg-opacity-70 border-t-0"></p>
+                                                <p className="w-1 h-4/5 border border-purple-600 bg-black bg-opacity-70 border-t-0"></p>
             
                                             </div>
                                             <p className={`w-full ${j == experience.responsibility.length - 1 ? 'pb-2' : 'pb-5'}`}>{resp}</p>

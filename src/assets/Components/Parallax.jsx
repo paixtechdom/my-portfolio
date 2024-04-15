@@ -31,7 +31,7 @@ export const Parallax = ({id, children, className}) => {
 
     return(
         <div id={id} className={`parallaxParent relative ${className}`}>
-            <div className={`relative  transition-all duration-500 ${isPosMatch ? 'animateParallax ' : 'opacity-0'} `}>
+            <div className={`relative  transition-all duration-1000 ${isPosMatch ? 'top-0 scale-[1]' : 'scale-[0.5] opacity-0 top-[200px]'} `}>
                 {children}
             </div>
         </div>

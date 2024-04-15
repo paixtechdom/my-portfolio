@@ -1,13 +1,25 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider, Outlet, Link } from 'react-router-dom';
-import { Home } from './Pages/Home/Home';
+// import { Home } from '';
+const Home = lazy(() => delayLoad(import('./Pages/Home/Home')))
 import { StaticBg } from './assets/Backgrounds';
+import { Loading } from './assets/Components/Loading';
+import { Alert } from './assets/Components/Alert';
+
+function delayLoad(promise) {
+  return new Promise(resolve => {
+    setTimeout(resolve, 2000);
+  }).then(() => promise);
+}
 
 export const AppContext = createContext()
 const Layout = () => {
   const [ currentNav, setCurrentNav ] = useState(0)
   const [ showNav, setShowNav ] = useState(false)
   const [ scrolledDown, setScrolledDown ] = useState(false)
+  const [ showALert, setShowAlert ] = useState(false)
+  const [ alertMessage, setAlertMessage ] = useState('')
+  const [ alertType, setAlertType ] = useState('')
 
     document.addEventListener('scroll', () => {
       if(document.documentElement.scrollTop > 500){
@@ -18,12 +30,17 @@ const Layout = () => {
   })
 
 
+
     return (
-      <AppContext.Provider value={{currentNav, setCurrentNav, showNav, setShowNav, scrolledDown, setScrolledDown }}>
+      <AppContext.Provider value={{currentNav, setCurrentNav, showNav, setShowNav, scrolledDown, setScrolledDown, showALert, setShowAlert, alertMessage, setAlertMessage, setAlertType, alertType }}>
 
         <div className='app min-h-screen'>
 
           <StaticBg />
+          {
+            showALert ? 
+            <Alert /> : ''
+          }
 
         <div className="z-[4] relative text-gray-400 overflow-hidden">
           <Outlet />
@@ -42,8 +59,12 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Home />
+        element: 
+        <Suspense fallback={<Loading />}>
+          <Home />
+        </Suspense>
       }
+      
 
       // landing page with each page for each project
       // contact page
@@ -59,10 +80,12 @@ const router = createBrowserRouter([
       ,
       {
         path: '/*',
-        element: <h4 className='parent' style={{
-          marginTop: 100+'px',
-          marginLeft: 50+'px'
-        }}>Page not found <Link to='/'>return to the home page</Link></h4>
+        element: <div className='parent h-screen center flex-col gap-5 w-full text-gray-200 bg-gray-900 border border-purple-900'>Page not found <br />
+
+        <p className='flex gap-2'>Return to the  <Link to='/' className='font-bold'>Home Page</Link></p>
+        
+        
+        </div>
       }
     ]
   }

@@ -28,28 +28,29 @@
     animation: animateHeroImg 3s ease-in-out infinite;
     scale: 0.9
 }
-.animateParallax{
-    animation: animateParallax 1s ease-in-out;
-}
 
 
 .animate-bounce-x{
     animation: animate-bounce-x 2s ease-in-out infinite;
 }
 
-@keyframes animateParallax {
-    from{
-        top: 100px;
-        opacity: 0.5;
-        scale: 0.5;
-    }
-    to{
-        top: 0px;
-        opacity: 1;
-        scale: 1;
-    }
+.zoom-out{
+    animation: zoom-out 3s ease-in-out infinite;
 }
 
+@keyframes zoom-out {
+  from {
+    transform: scale(0.5);
+}
+50% {
+    transform: scale(1);
+    
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+  
 @keyframes animate-bounce-x{
     0%, 100% {
         transform: translateX(0);
