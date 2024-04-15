@@ -15,7 +15,7 @@ import Calculator from "./img/calculator.png"
 
 const MyProjects = [
     {
-        title: 'Landing Page - Saculiet NIG Enterprises',
+        title: 'Website for Saculiet NIG Enterprises',
         lang: ['REACT', 'Tailwind', 'PHP', 'SQL', 'SEO'],
         link: 'https://saculietdrivingschool.com',
         description:  ['Designed a well detailed and beautiful landing page for the driving school, highlighting the service of the organization and other important details', 'Developed a gallery which displays images and videos of the driving school and their activity', 'Implemented SEO optimization which brought a 10% increase in their lead generation'],

@@ -3,7 +3,8 @@ import { Header } from "../assets/Components/Header"
 import { Parallax } from "../assets/Components/Parallax"
 import me  from '../assets/img/me.png'
 import { AppContext } from "../App"
-import { Axios } from "axios"
+import { Axios } from "axios" 
+import emailjs  from "@emailjs/browser"
 
 export const Contact = () => {
     const { setShowAlert, setAlertMessage, setAlertType } = useContext(AppContext)
@@ -14,7 +15,7 @@ export const Contact = () => {
     const [ subject, setSubject ] = useState('')
     const [ nameError, setNameError ] = useState(false)
     const [ messageError, setMessageError ] = useState(false) 
-    const [ isLoading, setIsLoading ] = useState(false) 
+    const [ isSending, setIsSending ] = useState(false) 
 
     const contactInfo = [
       
@@ -57,7 +58,6 @@ export const Contact = () => {
 
     const handleSubmit = async (e) =>{
         e.preventDefault()
-        setIsLoading(true)
         const newName = name.split(' ').join('')
         const newMessage = message.split(' ').join('')
         if(newName.length < 5 || newName == 0){
@@ -67,6 +67,7 @@ export const Contact = () => {
             setMessageError(true)
             setNameError(false)
         }else{
+            setIsSending(true)
             setMessageError(false)
             setNameError(false)
 
@@ -77,22 +78,23 @@ export const Contact = () => {
             const data = {
                 service_id: serviceId ,
                 template_id: templateId,
-                user_id: publicKey,
-                 template_params: {
+                template_params: {
                     from_name: name,
                     from_email: email,
                     to_name: 'Oluwaferanmi Peace',
                     message: 
                     'SUBJECT -      ' + subject + 
                     ' MESSAGE -     ' + message
-                }
+                },
+                user_id: publicKey,
             };
 
-            await Axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
+            // await Axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
+            await emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
             .then((response) => {
             setShowAlert(true)
             setAlertType('success')
-            setIsLoading(false)
+            setIsSending(false)
             setAlertMessage('Message sent successfully!')
             setName('')
             setEmail('')
@@ -100,7 +102,7 @@ export const Contact = () => {
         })
         .catch((error) =>{
             setShowAlert(true)
-            setIsLoading(false)
+            setIsSending(false)
             setAlertType('error')
             setAlertMessage('Error sending message')
         })
@@ -110,50 +112,52 @@ export const Contact = () => {
     
     return(
     <div id="Contact" className="parent center flex-col">
-        <Header text={'Contact'} icon={'envelope-fill'}/>
+        <Header text={'Contact me'} icon={'envelope-fill'}/>
 
         <div className="flex flex-col center lg:flex-row w-11/12 md:w-10/12 lg:w-9/12 mt-5 gap-9">
+            <div className="center flex-col w-full">
+                <div className="flex w-full justify-between px-9 mb-6 border rounded-full p-2 border-purple-900">
+                    {
+                        contactInfo.map((contact, i) => (
+                            <Parallax key={i} id={contact.icon.replaceAll('-','')}>
 
-            <div className="w-full bg-gray-900 rounded-xl h-96 center border border-purple-900 ">
-                    <div className="flex flex-col w-full text-4xl justify- gap-4 bg-blue- items- center " onClick={() => {
-                        document.querySelector('#contactform').scrollIntoView({
-                            behavior: 'smooth'
-                        })
-                    }}>
-                        <Parallax id={'myimage'}>
-                            <div className="h-40 w-40 center rounded-full bg-gray-200 overflow-hidden">
-                                <img src={me} alt="My Image" className="w-fit h-full"/>
+                            <a href={contact.link} className="items-center bg-b lack w-11 h-11 center text-gray-100 border border-purple-900 rounded-full text-xl hover:scale-125 transition-all duration-500 hover:bg-gray-900  hover:border-0">
+                                <i className={`bi bi-${contact.icon}`}></i>
+                            </a>
+                            </Parallax>
+                        ))
+                    }
+                </div>
+                <div className="w-full bg-gray-900 rounded-xl h-96 center border border-purple-900 ">
+                        <div className="flex flex-col w-full text-4xl justify- gap-4 bg-blue- items- center " onClick={() => {
+                            document.querySelector('#contactform').scrollIntoView({
+                                behavior: 'smooth'
+                            })
+                        }}>
+                            <Parallax id={'myimage'}>
+                                <div className="h-40 w-40 center rounded-full bg-gray-200 overflow-hidden">
+                                    <img src={me} alt="My Image" className="w-fit h-full"/>
 
-                            </div>
+                                </div>
 
-                        </Parallax>
-                        {/* <i className="bi bi-person-plus-fill center bg-gray-100 text-gray-900 h-20 w-20 border rounded-full"></i> */}
-                        <Parallax id={'onboard'}>
-                            <div className="flex items-center cursor-pointer">
-                                <p className=" flex items-center gap-4 lining-nums"> 
-                                Onboard me 
-                                </p>
-                                <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
-                                <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
-                            </div>
-                        </Parallax>
+                            </Parallax>
+                            {/* <i className="bi bi-person-plus-fill center bg-gray-100 text-gray-900 h-20 w-20 border rounded-full"></i> */}
+                            <Parallax id={'onboard'}>
+                                <div className="flex items-center cursor-pointer">
+                                    <p className=" flex items-center gap-4 lining-nums"> 
+                                    Onboard me 
+                                    </p>
+                                    <i className="bi bi-arrow-right hidden lg:block animate-bounce-x"></i>
+                                    <i className="bi bi-arrow-down lg:hidden animate-bounce"></i>
+                                </div>
+                            </Parallax>
 
-                    </div>
-              
+                        </div>
+                
+                </div>
             </div>
             <form action="" id="contactform" className="center w-11/12 flex-col gap-5" onSubmit={handleSubmit}>
-                <div className="flex w-full justify-between px-9 mb-6 border rounded-full p-2 border-purple-900">
-                {
-                    contactInfo.map((contact) => (
-                        <Parallax id={contact.icon.replaceAll('-','')}>
-
-                        <a href={contact.link} className="items-center bg-b lack w-11 h-11 center text-gray-100 border border-purple-900 rounded-full text-xl hover:scale-125 transition-all duration-500 hover:bg-gray-900  hover:border-0">
-                            <i className={`bi bi-${contact.icon}`}></i>
-                        </a>
-                        </Parallax>
-                    ))
-                }
-                </div>
+                
                 <Parallax id={'formname'} className={'w-full'}>
                     <FormInput label={'Name'} icon={'person-fill'} value={name} setValue={setName} type={'text'}/>
                     {
@@ -180,7 +184,7 @@ export const Contact = () => {
                     </label>
 
                     <div className="flex border border-purple-900 rounded-2xl shadow-lg center w-full overflow-hidden text-sm">
-                        <textarea type='text' placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none " value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                        <textarea type='text' placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none  focus:initial" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                         
                     </div>                
                     </div>
@@ -192,12 +196,12 @@ export const Contact = () => {
                 </Parallax>
 
                 <Parallax id={'formmessage'} className={'w-full'}>
-                    <button type="submit" className={`bg-black  border border-purple-900 text-gray-200 rounded-2xl w-full  transition-all duration-1000 gap-3 text-xl p-3 center cursor-pointer hover:scale-90`}>
+                    <button type="submit" disabled={isSending} className={`bg-black  border border-purple-900 text-gray-200 rounded-2xl w-full  transition-all duration-1000 gap-3 text-xl p-3 center cursor-pointer hover:scale-90 focus:initial`}>
                         {
-                            isLoading ? 'Sending...' : 'Send Message'
+                            isSending ? 'Sending...' : 'Send Message'
                         }
                         {
-                            isLoading ? '' : 
+                            isSending ? '' : 
                         <i className="bi bi-cursor-fill"></i>
                         }
 
@@ -223,7 +227,7 @@ const FormInput = ({label, icon, value, setValue, type, isTextArea}) => {
             </label>
 
         <div className="flex border border-purple-900 rounded-2xl shadow-lg center w-full overflow-hidden">
-            <input type={type} placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none " value={value} onChange={(e) => setValue(e.target.value)} required/>
+            <input type={type} placeholder="" className="bg-black bg-opacity-70 w-full p-3 pt-5 px-6 outline-none focus:initial" value={value} onChange={(e) => setValue(e.target.value)} required/>
             
 
         </div>

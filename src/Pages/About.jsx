@@ -8,7 +8,7 @@ import resume from './Oluwaferanmijohnresume.pdf'
 export const About = () => {
     return(
     <div id="About" className="parent center flex-col bg-black bg-opacity-80 pb-[10vh]">
-        <Header text={'About'} icon={'person-fill'}/>
+        <Header text={'About me'} icon={'person-fill'}/>
         <div className="center flex-col lg:flex-row w-11/12 md:w-10/12 lg:w-9/12 gap-8 lg:gap-[4ch]">
 
             <div className="center w-full lg:w-5/12 border border-purple-700 h-[40vh] rounded-xl">

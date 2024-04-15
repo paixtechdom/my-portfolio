@@ -18,7 +18,7 @@ export const Intro = ({display}) => {
 
             
     return(
-        <div className="">
+        <div className="text-center lg:text-left w-full">
                 {
                 IntroText.map((letter, key) => (
                     key < index ?

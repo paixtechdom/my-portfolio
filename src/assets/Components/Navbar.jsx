@@ -16,7 +16,7 @@ export const Navbar = ({scrolledDown}) => {
         setShowNav(!showNav)
     }
     return(
-        <nav className={`h-screen md:h-fit py-5 transition-all w-full duration-1000 text-gray-300 ${scrolledDown ? 'center flex-col md:flex-row bg-black md:bg-opacity-80 fixed gap-5 z-50' : 'w-11/12 lg:w-7/12 text-center lg:text-left -z-10'} top-0 ${showNav ? ' right-[0%] ' : '-right-[100%] md:right-0'}`}>
+        <nav className={`h-screen md:h-fit py-5 transition-all w-full duration-1000 text-gray-300 ${scrolledDown ? 'center flex-col md:flex-row bg-black md:bg-opacity-80 fixed gap-5 z-50' : 'w-11/12 lg:w-7/12 text-center lg:text-left z-10'} top-0 ${showNav ? ' right-[0%] ' : '-right-[100%] md:right-0'}`}>
 
             <div className={`block fixed top-5 md:hidden ${scrolledDown ? 'right-5 md:-right[50%]' : 'pt-0 -right-[50%]'}`}>
                 <IconButton icon={showNav ? 'x-lg' : 'list'} 
