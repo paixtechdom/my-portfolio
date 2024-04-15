@@ -98,6 +98,7 @@ export const Contact = () => {
             setAlertMessage('Message sent successfully!')
             setName('')
             setEmail('')
+            setSubject('')
             setMessage('')
         })
         .catch((error) =>{
