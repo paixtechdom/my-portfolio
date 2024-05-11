@@ -16,10 +16,10 @@ export const AppContext = createContext()
 const Layout = () => {
   const [ currentNav, setCurrentNav ] = useState(0)
   const [ showNav, setShowNav ] = useState(false)
-  const [ scrolledDown, setScrolledDown ] = useState(false)
   const [ showALert, setShowAlert ] = useState(false)
   const [ alertMessage, setAlertMessage ] = useState('')
   const [ alertType, setAlertType ] = useState('')
+  const [ scrolledDown, setScrolledDown ] = useState(false)
 
     document.addEventListener('scroll', () => {
       if(document.documentElement.scrollTop > 500){

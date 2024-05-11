@@ -196,7 +196,7 @@ export const Contact = () => {
                     }
                 </Parallax>
 
-                <Parallax id={'formmessage'} className={'w-full'}>
+                <Parallax id={'formsubmit'} className={'w-full'}>
                     <button type="submit" disabled={isSending} className={`bg-black  border border-purple-900 text-gray-200 rounded-2xl w-full  transition-all duration-1000 gap-3 text-xl p-3 center cursor-pointer hover:scale-90 focus:initial`}>
                         {
                             isSending ? 'Sending...' : 'Send Message'
