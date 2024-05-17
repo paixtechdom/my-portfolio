@@ -12,8 +12,30 @@ import Portfolio from './img/portfolioImg.png'
 import Rock from "./img/rock.png"
 import Clock from "./img/clock.png"
 import Calculator from "./img/calculator.png"
+import albertInteriors from "./img/albert-interiors.png"
 
 const MyProjects = [
+    {
+        title: 'Website for Albert Interior Design Agency',
+        lang: ['REACT', 'Tailwind', 'Responsive Design'],
+        link: 'https://albert-interiors.netlify.app',
+        description:  [''],
+        img: albertInteriors
+    },
+    {
+        title: 'Website for Macmay Group',
+        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
+        link: 'https://macmaygroup.netlify.app',
+        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
+        img: MacmayImg
+    },
+    {
+        title: 'Website for Paix Techdom',
+        lang: ['REACT', 'Tailwind'],
+        link: 'https://paixtechdom.netlify.app',
+        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
+        img: PaixTechdomImg
+    },
     {
         title: 'Website for Saculiet NIG Enterprises',
         lang: ['REACT', 'Tailwind', 'PHP', 'SQL', 'SEO'],
@@ -36,13 +58,6 @@ const MyProjects = [
         img: ClassImg
     },
     {
-        title: 'Website for Paix Techdom',
-        lang: ['REACT', 'Tailwind'],
-        link: 'https://paixtechdom.netlify.app',
-        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
-        img: PaixTechdomImg
-    },
-    {
         title: 'PREJUM - BLOG',
         lang: ['REACT', 'PHP', 'Tailwind', 'JSON'],
         link: 'https://prejum.netlify.app',
@@ -55,13 +70,6 @@ const MyProjects = [
         link: 'https://johnoluwaferanmi.netlify.app',
         description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
         img: Portfolio
-    },
-    {
-        title: 'Website for Macmay Group',
-        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
-        link: 'https://macmaygroup.netlify.app',
-        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
-        img: MacmayImg
     },
     {
         title: 'Social Media Website',

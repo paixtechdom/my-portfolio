@@ -9,10 +9,10 @@ export const Experience = () => {
             date: 'April 2, 2024',
             intro: ['s'],
             responsibility: [
-                "I've been involved in building software applications, with a focus on building the Kenrow Shop's merchant management application as a start.",
-                "I've had the pleasure of contributing to the brainstorming and execution of fresh, innovative features that are custom-made for the merchant management application",
-                "I troubleshoot and resolve technical issues on software applications",
-                "Working hand-in-hand with diverse teams, ensuring we consistently deliver top-notch software solutions"
+                "Built software applications, with a focus on building the Kenrow Shop's merchant management application as a start.",
+                "I had the pleasure of contributing to the brainstorming and execution of fresh, innovative features that are custom-made for the merchant management application",
+                "Troubleshot and resolved technical issues on software applications",
+                "Worked hand-in-hand with diverse teams, ensuring we consistently deliver top-notch software solutions"
             ],
             conclusion: ''
         },
