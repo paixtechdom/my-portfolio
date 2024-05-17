@@ -5,6 +5,9 @@ export const Skills = () => {
 
     const myskills = [
         {
+            name: 'Next.js',
+        },
+        {
             name: 'React',
         },
         {
@@ -21,6 +24,9 @@ export const Skills = () => {
         },
         {
             name: 'PHP',
+        },
+        {
+            name: 'Tailwindcss',
         },
         {
             name: 'SQL',
