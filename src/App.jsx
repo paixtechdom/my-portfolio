@@ -63,21 +63,7 @@ const router = createBrowserRouter([
         <Suspense fallback={<Loading />}>
           <Home />
         </Suspense>
-      }
-      
-
-      // landing page with each page for each project
-      // contact page
-
-      // ,{
-      //   path: '/about',
-      //   element: <About />
-      // },
-      // {
-      //    path: '/services',
-      //   // element: <Services />
-      // }
-      ,
+      },
       {
         path: '/*',
         element: <div className='parent h-screen center flex-col gap-5 w-full text-gray-200 bg-gray-900 border border-purple-900'>Page not found <br />
