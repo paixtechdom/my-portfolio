@@ -49,11 +49,11 @@ const Home = () => {
             <div id="Home" className="flex items-center lg:justify-center pt-9 flex-col w-full h-screen text-white">
     
                 <div className="flex justify-start flex-col w-11/12 md:w-10/12 lg:w-9/12 pt-[20vh] lg:pt-0">
-                    <div className="flex flex-col items-center lg:items-start w-full gap-2 text-cente">
+                    <div className="flex flex-col items-center lg:items-start w-full gap-2 text-cente h-scren">
                         <div className="flex gap-1 text-gray-300 text-right">
                             <p>Hi There!</p> 👋👋
                         </div>
-                        <p className="text-purple-600 text-2xl md:text-4xl font-bold text-center lg:text-left">I am Oluwaferanmi John</p>
+                        <p className="text-purple-600 text-2xl md:text-4xl font-bold text-center lg:text-left">I am Oluwaferanmi John,</p>
                         <Intro display={display}/>
 
                         <Navbar scrolledDown={scrolledDown}/>

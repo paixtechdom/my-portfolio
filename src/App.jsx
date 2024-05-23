@@ -8,7 +8,7 @@ import { Alert } from './assets/Components/Alert';
 
 function delayLoad(promise) {
   return new Promise(resolve => {
-    setTimeout(resolve, 2000);
+    setTimeout(resolve, 0);
   }).then(() => promise);
 }
 
