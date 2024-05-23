@@ -67,7 +67,7 @@ const Home = () => {
             <Skills />
             <Experience />
             <Projects />  */}
-            <Contact />
+            {/* <Contact /> */}
 
             <div className="center bg-black h-[10vh] border-t border-purple-900 text-gray-100 py-[8ch] mt-[10ch]">
                 <div className="w-11/12 md:w-10/12 center flex-col text-lg gap-4">
