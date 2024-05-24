@@ -38,12 +38,12 @@ export const Experience = () => {
             organization: 'Christ Liberty Assembly',
             date: 'Dec 12, 2023',
             intro: [
-                "I had the privilege of building a website for Christ Liberty Assembly, a beloved church, which features key sections including:"
+                "Built a website for Christ Liberty Assembly, with features key sections including:"
             ],
             responsibility: [
                 'A dedicated page for sharing inspiring sermons, allowing the congregation to access spiritual nourishment anytime, anywhere.',
                 'A visually captivating gallery page showcasing images that capture the essence and beauty of the church.',
-                'An engaging platform for sharing insightful articles, with individual pages for each article. These articles are easily shareable on social media platforms like Facebook and WhatsApp, or by copying the link to the clipboard.',
+                'Page for reading articles, which easily shareable on social media platforms like Facebook and WhatsApp, or by copying the link to the clipboard.',
 
                 "To enhance accessibility, I implemented a user-friendly search functionality. This feature enables visitors to filter articles by title and sermons by title or preacher, ensuring that they can quickly find the content they're seeking."
             ]
