@@ -21,7 +21,7 @@ export const Experience = () => {
             organization: 'Saculiet Nigeria Enterprises',
             date: 'Jan 3, 2024',
             intro: [
-                "I had the opportunity to develop a portal specifically tailored for the Driving School Arm of our company. This portal enables organizations to easily verify the certificates of the students from our driving school",
+                "I developed a portal specifically tailored for the Driving School Arm of the company. This portal enables organizations to easily verify the certificates of the students from the driving school",
                 "Some key features I implemented include:"
             ],
 
@@ -30,7 +30,7 @@ export const Experience = () => {
                 'A comprehensive dashboard for the driving school administration to efficiently manage requests, students, and organizations',
                 "Automated email notifications to keep the school informed at every step: from receiving a request submission to granting it, and notifying students when their certificate is verified by an organization."
             ],
-            conclusion: 'Additionally, I took charge of designing a captivating landing page and a visually appealing gallery page images and pictures of our driving school, enhancing our online presence and engaging potential students.'
+            conclusion: 'Additionally, I took charge of designing a captivating landing page and a visually appealing gallery page images and pictures of the driving school, enhancing the online presence and engaging potential students.'
         },
 
         {
