@@ -14,6 +14,9 @@ export const Skills = () => {
             name: 'Javascript',
         },
         {
+            name: 'Typescript',
+        },
+        {
             name: 'HTML',
         },
         {

@@ -32,7 +32,7 @@ const MyProjects = [
     {
         title: 'Website for Paix Techdom',
         lang: ['REACT', 'Tailwind'],
-        link: 'https://paixtechdom.netlify.app',
+        link: 'https://paixtechdom.com',
         description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
         img: PaixTechdomImg
     },
