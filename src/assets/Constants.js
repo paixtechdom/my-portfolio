@@ -16,20 +16,6 @@ import albertInteriors from "./img/albert-interiors.png"
 
 const MyProjects = [
     {
-        title: 'Website for Albert Interior Design Agency',
-        lang: ['REACT', 'Tailwind', 'Responsive Design'],
-        link: 'https://albert-interiors.netlify.app',
-        description:  [''],
-        img: albertInteriors
-    },
-    {
-        title: 'Website for Macmay Group',
-        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
-        link: 'https://macmaygroup.netlify.app',
-        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
-        img: MacmayImg
-    },
-    {
         title: 'Website for Paix Techdom',
         lang: ['REACT', 'Tailwind'],
         link: 'https://paixtechdom.com',
@@ -49,6 +35,20 @@ const MyProjects = [
         link: 'https://saculietdrivingschool.com',
         description:  ['Developed a portal for the Driving School Arm of the company, for organizations to verify the certificates of the students of the driving school', 'Key features includes:', '•    A page for organizations to submit student verification requests', '•    Email verification', '•    A dashboard for the school to view and manage requests, student and organizations', '•    Emails to notify the school of a request submission, inform organizations when the requests is granted and to inform students when their certificate is verified by an organization', '•    Secure authentication for organizations to access the portal and for admin login'],
         img: StudentVerificationImg
+    },
+    {
+        title: 'Website for Albert Interior Design Agency',
+        lang: ['REACT', 'Tailwind', 'Responsive Design'],
+        link: 'https://albert-interiors.netlify.app',
+        description:  [''],
+        img: albertInteriors
+    },
+    {
+        title: 'Website for Macmay Group',
+        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
+        link: 'https://macmaygroup.netlify.app',
+        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
+        img: MacmayImg
     },
     {
         title: 'Website for Christ Liberty Assembly',
