@@ -20,6 +20,15 @@ export const Skills = () => {
             name: 'Next.js',
         },
         {
+            name: 'PHP',
+        },
+        {
+            name: 'SQL',
+        },
+        {
+            name: 'Git',
+        },
+        {
             name: 'HTML',
         },
         {
@@ -29,16 +38,7 @@ export const Skills = () => {
             name: 'Bootstrap',
         },
         {
-            name: 'PHP',
-        },
-        {
-            name: 'SQL',
-        },
-        {
             name: 'SEO',
-        },
-        {
-            name: 'Git',
         },
         {
             name: 'Github',
