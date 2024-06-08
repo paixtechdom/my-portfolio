@@ -6,7 +6,7 @@ export const Parallax = ({id, children, className}) => {
     const posNo  = 800
     useEffect(() =>{
         
-        const pos = document.querySelector(`#${id.replaceAll('.','')}`).getBoundingClientRect()
+        const pos = document.querySelector(`#${id.replaceAll('.','').replaceAll('/', '')}`).getBoundingClientRect()
         if(pos.top < posNo){
             setIsPosMatch(true)
         }      
@@ -30,8 +30,8 @@ export const Parallax = ({id, children, className}) => {
     }, [])
 
     return(
-        <div id={id.replaceAll('.','')} className={`parallaxParent relative ${className}`}>
-            <div className={`relative  transition-all duration-1000 ${isPosMatch ? 'top-0 scale-[1]' : 'scale-[0.5] opacity-0 top-[200px]'} `}>
+        <div id={id.replaceAll('.','').replaceAll('/','')} className={`parallaxParent relative ${className}`}>
+            <div className={`relative  transition-all duration-1000 ${isPosMatch ? 'top-0 scale-[1]' : 'scale-[0.2] opacity-0 top-[20px]'} `}>
                 {children}
             </div>
         </div>

@@ -13,8 +13,16 @@ import Rock from "./img/rock.png"
 import Clock from "./img/clock.png"
 import Calculator from "./img/calculator.png"
 import albertInteriors from "./img/albert-interiors.png"
+import livingWaters from "./img/livingWaters.png"
 
 const MyProjects = [
+    {
+        title: 'Website for Living Waters Fellowship',
+        lang: ['REACT', 'Tailwind'],
+        link: 'https://livingwatersglobal.netlify.app',
+        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
+        img: livingWaters
+    },
     {
         title: 'Website for Paix Techdom',
         lang: ['REACT', 'Tailwind'],
@@ -64,13 +72,13 @@ const MyProjects = [
         description:  ['Designing personal blog a home, about and contact page and then the main blog.', 'Implenemted search algorithms to search or filter blogs'],
         img: BlogImg
     },
-    {
-        title: 'Portfolio Website',
-        lang: ['REACT', 'BOOTSTRAP', 'CSS'],
-        link: 'https://johnoluwaferanmi.netlify.app',
-        description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
-        img: Portfolio
-    },
+    // {
+    //     title: 'Portfolio Website',
+    //     lang: ['REACT', 'BOOTSTRAP', 'CSS'],
+    //     link: 'https://johnoluwaferanmi.netlify.app',
+    //     description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
+    //     img: Portfolio
+    // },
     {
         title: 'Social Media Website',
         lang: ['REACT', 'CSS', 'PHP', 'SQL'],

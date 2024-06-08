@@ -122,7 +122,7 @@ export const Contact = () => {
                         contactInfo.map((contact, i) => (
                             <Parallax key={i} id={contact.icon.replaceAll('-','')}>
 
-                            <a href={contact.link} className="items-center bg-b lack w-11 h-11 center text-gray-100 border border-purple-900 rounded-full text-xl hover:scale-125 transition-all duration-500 hover:bg-gray-900  hover:border-0">
+                            <a target="_blank" href={contact.link} className="items-center bg-b lack w-11 h-11 center text-gray-100 border border-purple-900 rounded-full text-xl hover:scale-125 transition-all duration-500 hover:bg-gray-900  hover:border-0">
                                 <i className={`bi bi-${contact.icon}`}></i>
                             </a>
                             </Parallax>
