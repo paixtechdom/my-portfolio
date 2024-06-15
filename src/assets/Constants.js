@@ -14,8 +14,16 @@ import Clock from "./img/clock.png"
 import Calculator from "./img/calculator.png"
 import albertInteriors from "./img/albert-interiors.png"
 import livingWaters from "./img/livingWaters.png"
+import resida from "./img/resida-housing.png"
 
 const MyProjects = [
+    {
+        title: 'Website for Resida Housing',
+        lang: ["Tyoescript", 'REACT', 'Tailwind'],
+        link: 'https://resida.netlify.app/',
+        description:  [''],
+        img: resida
+    },
     {
         title: 'Website for Living Waters Fellowship',
         lang: ['REACT', 'Tailwind'],
