@@ -18,28 +18,28 @@ import resida from "./img/resida-housing.png"
 
 const MyProjects = [
     {
-        title: 'Website for Resida Housing',
+        title: 'Resida Housing',
         lang: ["Tyoescript", 'REACT', 'Tailwind'],
         link: 'https://resida.netlify.app/',
         description:  [''],
         img: resida
     },
     {
-        title: 'Website for Living Waters Fellowship',
+        title: 'Living Waters Fellowship',
         lang: ['REACT', 'Tailwind'],
         link: 'https://livingwatersglobal.netlify.app',
         description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
         img: livingWaters
     },
     {
-        title: 'Website for Paix Techdom',
+        title: 'Paix Techdom',
         lang: ['REACT', 'Tailwind'],
         link: 'https://paixtechdom.com',
         description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
         img: PaixTechdomImg
     },
     {
-        title: 'Website for Saculiet NIG Enterprises',
+        title: 'Saculiet NIG Enterprises',
         lang: ['REACT', 'Tailwind', 'PHP', 'SQL', 'SEO'],
         link: 'https://saculietdrivingschool.com',
         description:  ['Designed a well detailed and beautiful landing page for the driving school, highlighting the service of the organization and other important details', 'Developed a gallery which displays images and videos of the driving school and their activity', 'Implemented SEO optimization which brought a 10% increase in their lead generation'],
@@ -53,21 +53,21 @@ const MyProjects = [
         img: StudentVerificationImg
     },
     {
-        title: 'Website for Albert Interior Design Agency',
+        title: 'Albert Interior Design Agency',
         lang: ['REACT', 'Tailwind', 'Responsive Design'],
         link: 'https://albert-interiors.netlify.app',
         description:  [''],
         img: albertInteriors
     },
     {
-        title: 'Website for Macmay Group',
+        title: 'Macmay Group',
         lang: ['REACT', 'BOOTSTRAP', 'CSS'],
         link: 'https://macmaygroup.netlify.app',
         description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
         img: MacmayImg
     },
     {
-        title: 'Website for Christ Liberty Assembly',
+        title: 'Christ Liberty Assembly',
         lang: ['REACT', 'Tailwind', 'PHP', 'SQL', 'JSON'],
         link: 'https://christlibertyassembly.org.ng',
         description:  ['Developed a website for the church, Christ Liberty Assembly containing key sections such as:', '•   A page for displaying sermons and a gallery page that displays images of the church.', '•	A page to display articles and a page for each article. The link to each article can be shared on Facebook, WhatsApp or the copied to clipboard.', '•	A search functionality to filter out articles by title and sermons by title or preacher.'],
