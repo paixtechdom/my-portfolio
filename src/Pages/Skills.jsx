@@ -41,16 +41,7 @@ export const Skills = () => {
             name: 'SEO',
         },
         {
-            name: 'Github',
-        },
-        {
-            name: 'Gitlab',
-        },
-        {
             name: 'WordPress',
-        },
-        {
-            name: 'REST API',
         },
     ]
 
