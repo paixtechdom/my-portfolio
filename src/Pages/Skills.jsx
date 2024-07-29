@@ -14,7 +14,7 @@ export const Skills = () => {
             name: 'Typescript',
         },
         {
-            name: 'Tailwindcss',
+            name: 'Tailwind',
         },
         {
             name: 'Next.js',
@@ -38,10 +38,13 @@ export const Skills = () => {
             name: 'Bootstrap',
         },
         {
+            name: 'REST API',
+        },
+        {
             name: 'SEO',
         },
         {
-            name: 'WordPress',
+            name: 'Problem Solving',
         },
     ]
 

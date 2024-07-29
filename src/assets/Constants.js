@@ -15,28 +15,22 @@ import Calculator from "./img/calculator.png"
 import albertInteriors from "./img/albert-interiors.png"
 import livingWaters from "./img/livingWaters.png"
 import resida from "./img/resida-housing.png"
+import onidson from "./img/onidsonImg.png"
 
 const MyProjects = [
+    {
+        title: 'Onidson Travels and Logistics Ltd',
+        lang: ["Tyoescript", 'REACT', 'Tailwind'],
+        link: 'https://onidsontravels.com/',
+        description:  [''],
+        img: onidson
+    },
     {
         title: 'Resida Housing',
         lang: ["Tyoescript", 'REACT', 'Tailwind'],
         link: 'https://resida.netlify.app/',
         description:  [''],
         img: resida
-    },
-    {
-        title: 'Living Waters Fellowship',
-        lang: ['REACT', 'Tailwind'],
-        link: 'https://livingwatersglobal.netlify.app',
-        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
-        img: livingWaters
-    },
-    {
-        title: 'Paix Techdom',
-        lang: ['REACT', 'Tailwind'],
-        link: 'https://paixtechdom.com',
-        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
-        img: PaixTechdomImg
     },
     {
         title: 'Saculiet NIG Enterprises',
@@ -46,12 +40,26 @@ const MyProjects = [
         img: SaculietImg
     },
     {
-        title: 'Student Verification Portal - Saculiet NIG Enterprises',
-        lang: ['REACT', 'Tailwind', 'PHP', 'SQL'],
-        link: 'https://saculietdrivingschool.com',
-        description:  ['Developed a portal for the Driving School Arm of the company, for organizations to verify the certificates of the students of the driving school', 'Key features includes:', '•    A page for organizations to submit student verification requests', '•    Email verification', '•    A dashboard for the school to view and manage requests, student and organizations', '•    Emails to notify the school of a request submission, inform organizations when the requests is granted and to inform students when their certificate is verified by an organization', '•    Secure authentication for organizations to access the portal and for admin login'],
-        img: StudentVerificationImg
+        title: 'Paix Techdom',
+        lang: ['REACT', 'Tailwind'],
+        link: 'https://paixtechdom.com',
+        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
+        img: PaixTechdomImg
     },
+    {
+        title: 'Audio Downloader',
+        lang: ['REACT', 'Tailwind'],
+        link: 'https://livingwatersglobal.netlify.app',
+        description:  ['Designed a landing page for a website Development Company, displaying the basic information about the services of the company.'],
+        img: livingWaters
+    },
+    // {
+    //     title: 'Student Verification Portal - Saculiet NIG Enterprises',
+    //     lang: ['REACT', 'Tailwind', 'PHP', 'SQL'],
+    //     link: 'https://saculietdrivingschool.com',
+    //     description:  ['Developed a portal for the Driving School Arm of the company, for organizations to verify the certificates of the students of the driving school', 'Key features includes:', '•    A page for organizations to submit student verification requests', '•    Email verification', '•    A dashboard for the school to view and manage requests, student and organizations', '•    Emails to notify the school of a request submission, inform organizations when the requests is granted and to inform students when their certificate is verified by an organization', '•    Secure authentication for organizations to access the portal and for admin login'],
+    //     img: StudentVerificationImg
+    // },
     {
         title: 'Albert Interior Design Agency',
         lang: ['REACT', 'Tailwind', 'Responsive Design'],
@@ -74,7 +82,7 @@ const MyProjects = [
         img: ClassImg
     },
     {
-        title: 'PREJUM - BLOG',
+        title: 'PREJUM - BLOG PROTOTYPE',
         lang: ['REACT', 'PHP', 'Tailwind', 'JSON'],
         link: 'https://prejum.netlify.app',
         description:  ['Designing personal blog a home, about and contact page and then the main blog.', 'Implenemted search algorithms to search or filter blogs'],
