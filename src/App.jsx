@@ -1,16 +1,11 @@
 import { useState, createContext, lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider, Outlet, Link } from 'react-router-dom';
 // import { Home } from './Pages/Home/Home';
-const Home = lazy(() => delayLoad(import('./Pages/Home/Home')))
+const Home = lazy(() => import('./Pages/Home/Home'))
 import { StaticBg } from './assets/Backgrounds';
 import { Loading } from './assets/Components/Loading';
 import { Alert } from './assets/Components/Alert';
 
-function delayLoad(promise) {
-  return new Promise(resolve => {
-    setTimeout(resolve, 2000);
-  }).then(() => promise);
-}
 
 export const AppContext = createContext()
 const Layout = () => {

@@ -20,7 +20,7 @@ import onidson from "./img/onidsonImg.png"
 const MyProjects = [
     {
         title: 'Onidson Travels and Logistics Ltd',
-        lang: ["Tyoescript", 'REACT', 'Tailwind'],
+        lang: ["Typescript", 'REACT', 'Tailwind'],
         link: 'https://onidsontravels.com/',
         description:  [''],
         img: onidson
@@ -63,14 +63,14 @@ const MyProjects = [
     {
         title: 'Albert Interior Design Agency',
         lang: ['REACT', 'Tailwind', 'Responsive Design'],
-        link: 'https://albert-interiors.netlify.app',
+        link: 'https://albert-interiors.vercel.app',
         description:  [''],
         img: albertInteriors
     },
     {
         title: 'Macmay Group',
         lang: ['REACT', 'BOOTSTRAP', 'CSS'],
-        link: 'https://macmaygroup.netlify.app',
+        link: 'https://macmaygroup.vervel.app',
         description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
         img: MacmayImg
     },
@@ -95,13 +95,13 @@ const MyProjects = [
     //     description:  ['This is a website still under development for Macmay Group of Company.',' The website currently displays only information about the company and also media through which they can be contacted.'],
     //     img: Portfolio
     // },
-    {
-        title: 'Social Media Website',
-        lang: ['REACT', 'CSS', 'PHP', 'SQL'],
-        link: 'https://eduaidsocialmedia.000webhostapp.com/',
-        description:  ['bold Username: guest','bold Password: guestguest','This is a custom social media application suitable for a university.',' It has features such as adding of posts which can be texts, a picture or both.','It also has sections to view updates added by the admin, a gallery section, and a section where the final year student can upload a copy of their projects, which can be downloaded by the other students.', 'It also has the functionality for updating of password and profile picture.'],
-        img: Eduaid
-    },
+    // {
+    //     title: 'Social Media Website',
+    //     lang: ['REACT', 'CSS', 'PHP', 'SQL'],
+    //     link: 'https://eduaidsocialmedia.000webhostapp.com/',
+    //     description:  ['bold Username: guest','bold Password: guestguest','This is a custom social media application suitable for a university.',' It has features such as adding of posts which can be texts, a picture or both.','It also has sections to view updates added by the admin, a gallery section, and a section where the final year student can upload a copy of their projects, which can be downloaded by the other students.', 'It also has the functionality for updating of password and profile picture.'],
+    //     img: Eduaid
+    // },
     {
         title: 'G.P.A Calculator',
         link: 'https://paixtechdom-gpa.netlify.app',
