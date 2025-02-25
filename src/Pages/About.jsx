@@ -25,10 +25,10 @@ export const About = () => {
             </div>
 
             <div className="flex flex-col w-full text-gray-100 tracking-wide leading-relaxed gap-4">
-                <p>I am <span className="text-purple-600 font-bold">John Oluwaferanmi,</span> a detailed-oriented self-taught Website Developer and a graduate of Computer Science (BSc.), with 2+ years experience working with Web Technologies. 
+                <p>I am <span className="text-purple-600 font-bold">John Oluwaferanmi,</span> a results-driven Web Developer skilled in React, Next.js, WordPress, and PHP. Passionate about building scalable, high-performance websites with optimized SEO and user experience. 
                 </p>
                 <p>
-                    Seeking a role in a dynamic team to develop innovative web solutions and grow as a professional.
+                Seeking to contribute expertise to a dynamic team and drive impactful projects.
                 </p>
 
                 <p>I am always in for both independent and collaborative projects.</p>

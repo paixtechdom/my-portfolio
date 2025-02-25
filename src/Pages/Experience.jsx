@@ -4,16 +4,54 @@ import { Parallax } from '../assets/Components/Parallax'
 export const Experience = () => {
     const myexperience = [
         {
-            organization: 'Web Developer',
-            role: 'PAIX TECHDOM',
-            intro: ['s'],
+            organization: 'AMAZING GRACE COMPUTERS',
+            date: "May 2022 – Aug 2022",
+            role: 'Instructor & Web Development Tutor',
             responsibility: [
-                "Developed and maintained responsive websites and web apps.",
-                "Debugged and optimized code for performance and scalability.",
-                "Conducted web design and collaborated with clients to meet project requirements.",
-                "Utilized Git for version control and code management."
+                "Delivered hands-on training in HTML, CSS, JavaScript, and WordPress.",
+                "Assisted students in developing personal and commercial web projects.",
+                "Created and maintained course materials, improving learning efficiency"
             ],
-            conclusion: ''
+        },
+        {
+            organization: 'EDUAID CONSULT',
+            date: "Nov 2022 – Dec 2023",
+            role: 'Web Developer & Website Manager',
+            responsibility: [  
+                "Designed and developed responsive, SEO-optimized websites for an educational consultancy.",
+                "Improved website traffic by 30% through SEO and performance optimization.", 
+                "Provided technical support and regular updates to ensure smooth website functionality."
+            ]          
+        },
+        {
+            organization: 'SACULIET NIGERIA ENTERPRISES',
+            date: "Dec 2023 – June 2024",
+            role: 'Web Developer',
+            responsibility: [  
+                "Developed a secure certificate verification portal for a driving school.",
+                "Designed a visually engaging landing page and gallery, increasing user engagement.",
+                "Implemented performance optimizations, reducing page load time by 40%."
+            ]          
+        },
+        {
+            organization: 'ONIDSON TRAVELS AND LOGISTICS LTD',
+            date: "June 2024 – Dec 2024",
+            role: 'Web Developer',
+            responsibility: [  
+                "Built a fully functional website for a travel agency, showcasing services and aviation courses",
+                "Integrated a customer inquiry contact form, improving lead generation.",
+                "Enhanced site navigation and responsiveness for a seamless user experience."
+            ]          
+        },
+        {
+            organization: 'PAIX TECHDOM',
+            role: 'Founder & Lead Web Developer',
+            date: "Dec 2022 – Present",
+            responsibility: [
+                "Established a web development agency, delivering custom digital solutions for businesses.",
+                "Led a team in developing high-performing websites with modern UI/UX principles.",
+                "Spearheaded SEO strategies that improved client search rankings by 50%."
+            ],
         },
     ]
 
@@ -29,25 +67,15 @@ export const Experience = () => {
                         
                         <div className="flex flex-col gap-3 bg-gray-900 p-4 lg:p-5 lg:px-9 rounded-t-xl">
                             <p className="text-xl font-bold text-gray-300">
-                                {experience.role}
+                                {experience.organization}
                             </p>
-                            <div className="flex justify-between">
-                                <p className="">{experience.organization}</p>
+                            <div className="flex justify-between text-sm">
+                                <p className="">{experience.role}</p>
+                                <p className="">{experience.date}</p>
                             </div>
 
                         </div>
                         <div className="flex flex-col p-4 lg:p-9 text-[15px] lg:text-[16px] border pt-6 border-t-0 border-purple-900 rounded-b-xl">
-                                {
-                                    experience.intro.map((int, j) => (
-                                        int !== 's' &&
-                                        <Parallax key={j} id={
-                                            i == 1 ? 'mn' :
-                                            i == 2 ? 'e2' : 'fss'}>
-                                        <p key={j} className="mb-4">{int}</p>
-                                        </Parallax>
-                                    ))
-                                }
-
                             {
                                 experience.responsibility.map((resp, j) => (
                                     <Parallax key={j} id={(resp[0]+resp[2]+resp[3]+resp[4]).replaceAll(' ', '')}>
@@ -64,10 +92,7 @@ export const Experience = () => {
                                     </Parallax>
                                 ))
                             }
-                            <Parallax id={i == 1 ? 'tltn' : 'djtepi'}>
-                                <p className="mt-4">{experience.conclusion}</p>
-
-                            </Parallax>
+                           
                         </div>
                     </div>
                 ))
