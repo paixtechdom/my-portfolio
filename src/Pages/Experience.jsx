@@ -69,7 +69,7 @@ export const Experience = () => {
                             <p className="text-xl font-bold text-gray-300">
                                 {experience.organization}
                             </p>
-                            <div className="flex justify-between text-sm">
+                            <div className="flex justify-between text-sm flex-col md:flex-row">
                                 <p className="">{experience.role}</p>
                                 <p className="">{experience.date}</p>
                             </div>

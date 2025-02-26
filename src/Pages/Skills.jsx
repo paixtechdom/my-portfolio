@@ -23,6 +23,9 @@ export const Skills = () => {
             name: 'PHP',
         },
         {
+            name: 'Wordpress',
+        },
+        {
             name: 'SQL',
         },
         {
@@ -45,7 +48,7 @@ export const Skills = () => {
         },
         {
             name: 'Problem Solving',
-        },
+        }
     ]
 
 
