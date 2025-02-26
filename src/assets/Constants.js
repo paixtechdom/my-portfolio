@@ -17,16 +17,16 @@ import livingWaters from "./img/livingWaters.png"
 import resida from "./img/resida-housing.png"
 import onidson from "./img/onidsonImg.png"
 import donatex from "./img/donatex.png"
-// import bsic from "./img/bsic.png"
+import bsicadvertisement from "./img/bsicadvertisement.png"
 
 const MyProjects = [
-    // {
-    //     title: 'BSIC Advertisement',
-    //     lang: ["Typescript", 'REACT', 'Tailwind'],
-    //     link: 'https://bsicadvertisement.com/',
-    //     description:  [''],
-    //     img: bsic
-    // },
+    {
+        title: 'BSIC Advertisement',
+        lang: ["Typescript", 'REACT', 'Tailwind'],
+        link: 'https://bsicadvertisement.com/',
+        description:  [''],
+        img: bsicadvertisement
+    },
     {
         title: 'Living Waters Global Ministry',
         lang: ["Typescript", 'REACT', 'Tailwind'],
