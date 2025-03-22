@@ -3,7 +3,7 @@ import { Button } from "../assets/Components/Button"
 import { Header } from "../assets/Components/Header"
 import me from '../assets/img/me.png'
 import { Link } from "react-router-dom"
-import resume from './Oluwaferanmijohnresume.pdf' 
+import resume from '/Oluwaferanmijohnresume.pdf' 
 
 export const About = () => {
     return(
@@ -33,7 +33,7 @@ export const About = () => {
 
                 <p>I am always in for both independent and collaborative projects.</p>
 
-                <a href={resume}>
+                <a target="_blank" href={resume}>
                     <Button icon={'download'} text={'Download my resume'} className={'w-fit border-purple-600'}/>
                 </a>
             </div>

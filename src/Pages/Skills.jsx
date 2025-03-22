@@ -47,7 +47,7 @@ export const Skills = () => {
             name: 'SEO',
         },
         {
-            name: 'Problem Solving',
+            name: 'DSA',
         }
     ]
 
