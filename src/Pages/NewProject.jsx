@@ -85,19 +85,19 @@ export const NewProject = () => {
       }
     };
 
-    const handleTouchMove = (e) => {
-      if (isActive) e.preventDefault();
-    };
+    // const handleTouchMove = (e) => {
+    //   if (isActive) e.preventDefault();
+    // };
 
     // window.addEventListener("wheel", handleWheel, { passive: false });
     // window.addEventListener("keydown", handleKey);
-    el.addEventListener("touchmove", handleTouchMove, { passive: false });
+    // el.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
       observer.disconnect();
       // window.removeEventListener("wheel", handleWheel);
       // window.removeEventListener("keydown", handleKey);
-      el.removeEventListener("touchmove", handleTouchMove);
+      // el.removeEventListener("touchmove", handleTouchMove);
     };
   }, [currentIndex]);
 
