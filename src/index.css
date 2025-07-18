@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    ---blue: rgb(2, 2, 31);
+}
+
+.bg-blue{
+    background-color: var(---blue);
+}
+.text-blue{
+    color: var(---blue);
+}
+.text-small{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.animateHeroImg{
+    transition: all 0.3s ease-in-out;
+    animation: animateHeroImg 3s ease-in-out infinite;
+    scale: 0.9
+}
+
+
+.animate-bounce-x{
+    animation: animate-bounce-x 2s ease-in-out infinite;
+}
+
+.zoom-out{
+    animation: zoom-out 3s ease-in-out infinite;
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(0.5);
+}
+50% {
+    transform: scale(1);
+    
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+  
+@keyframes animate-bounce-x{
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+}
+
+

@@ -1,0 +1,15 @@
+.blurOverlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+
+}
+
+.blurLight{
+    background-image: radial-gradient(
+        /* rgb(248, 240, 244) , 
+        rgb(248, 240, 244, 0.5) , 
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0) */
+        );
+
+}
